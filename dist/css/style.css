@@ -1,0 +1,21 @@
+.wrapper {
+  height: 400px;
+  width: 800px;
+  background-color: #848789; }
+
+.nav-tab__li {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid black;
+  text-align: center; }
+
+.none {
+  display: none; }
+
+.none {
+  display: none; }
+
+.block {
+  display: block; }
