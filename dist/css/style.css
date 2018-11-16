@@ -4,28 +4,28 @@
   font-family: Montserrat, sans-serif;
   font-weight: 400; }
 
-.navTab {
+.NavTab {
   display: inline;
   padding-top: 10px; }
-  .navTab .navTab__links {
+  .NavTab .NavTab__links {
     color: black;
     text-decoration: none;
     list-style-type: none;
     border-radius: 5px 5px 2px 2px;
     padding: 15px 25px 15px 25px; }
-  .navTab .navTab__li {
+  .NavTab .NavTab__li {
     display: inline-block; }
 
-.tabContent {
+.TabContent {
   margin: 15px;
   border-top: 3px solid gray; }
-  .tabContent .tabPanel {
+  .TabContent .TabPanel {
     padding-top: 20px; }
 
 .hide {
   display: none; }
 
-.navTab__links:focus {
+.NavTab__links:focus {
   border: 2px solid gray;
   border-bottom: 4px solid white;
   margin-bottom: -2px;

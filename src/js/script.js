@@ -1,6 +1,6 @@
 (function () {
-  const tabs = document.querySelectorAll('.navTab__links');
-  const content = document.querySelectorAll('.tabPanel');
+  const tabs = document.querySelectorAll('.NavTab__links');
+  const content = document.querySelectorAll('.TabPanel');
   document.querySelector('a[data-tab=home]').focus();
   for (let t = 0; t < tabs.length; t++) {
     tabs[t].addEventListener('click', (event) => {
