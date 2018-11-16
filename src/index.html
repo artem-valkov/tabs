@@ -6,16 +6,25 @@
   <title>validation-form</title>
 </head>
 <body>
-<div class="wrapper">
-  <ul class="nav-tabs">
-    <li class="nav-tab__li " ><a class="nav-tab__links" data-tab="home" href="">Home</a></li>
-    <li class="nav-tab__li " ><a class="nav-tab__links" data-tab="account" href="">Account</a></li>
-    <li class="nav-tab__li " ><a class="nav-tab__links" data-tab="contact" href="">Contact</a></li>
+<div class="tab">
+  <ul class="navTab">
+    <a class="navTab__links" data-tab="home" href=""><li class="navTab__li" >Home</li></a>
+    <a class="navTab__links" data-tab="account" href=""><li class="navTab__li" >Account</li></a>
+    <a class="navTab__links" data-tab="contact" href=""><li class="navTab__li" >Contact</li></a>
   </ul>
-  <div class="tab-content">
-    <div class="tab-panel home none" data-content="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at eum laudantium libero nesciunt odit porro sint ullam unde velit. Aut consequatur libero minima odit placeat quibusdam veniam voluptas voluptatum.</div>
-    <div class="tab-panel account none" data-content="account">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic in provident reiciendis suscipit! Dolorem optio quae quod rem sit. Ab ad delectus dolor eum, labore magni nobis odit voluptas voluptatibus?</div>
-    <div class="tab-panel contact none" data-content="contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque cupiditate, deserunt earum explicabo incidunt laborum nulla! Ab aliquid cum itaque odio perspiciatis quas quod rem tenetur ut velit, vero.</div>
+  <div class="tabContent">
+    <div class="tabPanel" data-content="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Asperiores at eum laudantium libero nesciunt odit porro sint ullam unde velit.
+      Aut consequatur libero minima odit placeat quibusdam veniam voluptas voluptatum.
+    </div>
+    <div class="tabPanel hide" data-content="account">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Hic in provident reiciendis suscipit! Dolorem optio quae quod rem sit.
+      Ab ad delectus dolor eum, labore magni nobis odit voluptas voluptatibus?
+    </div>
+    <div class="tabPanel hide" data-content="contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Asperiores cumque cupiditate, deserunt earum explicabo incidunt laborum nulla!
+      Ab aliquid cum itaque odio perspiciatis quas quod rem tenetur ut velit, vero.
+    </div>
   </div>
 </div>
 <script src="js/script.js"></script>

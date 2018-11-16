@@ -1,23 +1,19 @@
 (function () {
-  const homeTab = document.querySelector('[data-tab=home]');
-  const accountTab = document.querySelector('[data-tab=account]');
-  const contactTab = document.querySelector('[data-tab=contact]');
-  homeTab.addEventListener('click', (event) => {
-    event.preventDefault();
-    document.querySelector('[data-content=home]').classList.remove('none');
-    document.querySelector('[data-content=account]').classList.add('none');
-    document.querySelector('[data-content=contact]').classList.add('none');
-  });
-  accountTab.addEventListener('click', (event) => {
-    event.preventDefault();
-    document.querySelector('[data-content=home]').classList.add('none');
-    document.querySelector('[data-content=account]').classList.remove('none');
-    document.querySelector('[data-content=contact]').classList.add('none');
-  });
-  contactTab.addEventListener('click', (event) => {
-    event.preventDefault();
-    document.querySelector('[data-content=home]').classList.add('none');
-    document.querySelector('[data-content=account]').classList.add('none');
-    document.querySelector('[data-content=contact]').classList.remove('none');
-  });
+  const tabs = document.querySelectorAll('.navTab__links');
+  const content = document.querySelectorAll('.tabPanel');
+  document.querySelector('a[data-tab=home]').focus();
+  for (let t = 0; t < tabs.length; t++) {
+    tabs[t].addEventListener('click', (event) => {
+      event.preventDefault();
+      for (let c = 0; c < content.length; c++) {
+        if (content[c].dataset.content === tabs[t].dataset.tab) {
+          content[c].classList.remove('hide');
+          tabs[t].classList.add('active');
+        } else {
+          content[c].classList.add('hide');
+          tabs[t].classList.remove('active');
+        }
+      }
+    });
+  }
 }());
