@@ -2,4 +2,4 @@
 
 Hello!
 My web-page link:
-https://artem-valkov.github.io/web-page/dist/
+https://artem-valkov.github.io/tabs/dist/
